@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWPF>true</UseWPF><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><AssemblyName>RenoDX MFG Unlocker</AssemblyName><RootNamespace>RenoDXMfgUnlocker</RootNamespace><Version>1.0.0</Version><SatelliteResourceLanguages>en</SatelliteResourceLanguages><AssemblyVersion>$(Version)</AssemblyVersion><FileVersion>$(Version)</FileVersion><InformationalVersion>$(Version)</InformationalVersion><Product>RenoDX MFG Unlocker</Product><Description>Premium desktop installer for RenoDX MFG Unlock releases.</Description><Company>RenoDX MFG Unlocker</Company><ApplicationIcon>Assets\RenoDX.ico</ApplicationIcon></PropertyGroup>
+  <ItemGroup><Resource Include="Assets\RenoDX.ico"/><Resource Include="Assets\RenoDX.png"/></ItemGroup>
+</Project>
