@@ -1,14 +1,45 @@
+
 # RenoDX MFG Unlocker
 
 RenoDX MFG Unlocker is an independent Windows desktop utility for browsing published MFG Unlock releases and installing a selected addon next to a chosen game executable.
 
-## Project
+## Features
 
-- **Technology:** C# / .NET 8 WPF
+- Browse published MFG Unlock addon releases.
+- Select a game and its executable.
+- Choose a release to install.
+- Install the selected addon next to the chosen game executable.
+- Dark-themed interface with Home and About pages.
+
+## Requirements
+
+ReShade is required for the addon to work. The utility installs the addon but does not install ReShade.
+
+For detailed requirements, compatibility information, and installation instructions, please visit the [original MFG Unlock project](https://github.com/mavismmg/MFGAdaUnlock-RenoDx).
+
+## Download
+
+Download the latest version from the [GitHub Releases page](https://github.com/ExiZz1/RenoDX-MFG-Unlocker/releases).
+
+Extract the downloaded ZIP and run the application.
+
+## Project Information
+
+- **Application:** RenoDX MFG Unlocker
+- **Version:** 1.0.0
+- **Developer:** [ExiZz](https://github.com/ExiZz1)
 - **Platform:** Windows x64
-- **Application developer:** ExiZz — https://github.com/ExiZz1
-- **Original MFG Unlock project and release source:** https://github.com/mavismmg/MFGAdaUnlock-RenoDx
+- **Technology:** C# / .NET 8 WPF
 
-This repository contains the application's source code and assets. It does not include the separately distributed release executable or the MFG Unlock addon binaries.
+## Credits
 
-RenoDX MFG Unlocker is an independent utility and is not presented as an official tool of the original addon author. See `THIRD_PARTY_NOTICES.md` for attribution and third-party component notes.
+Credit goes to the original MFG Unlock project and its contributors:
+
+[Original MFG Unlock repository](https://github.com/mavismmg/MFGAdaUnlock-RenoDx)
+
+RenoDX MFG Unlocker is an independent utility and is not an official tool of the original project.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution and third-party component information.
+
+
+Use the addon only with compatible games and software. Always review the original project's documentation and requirements before installation.
