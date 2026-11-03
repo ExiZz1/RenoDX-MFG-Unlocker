@@ -4,7 +4,7 @@ RenoDX MFG Unlocker is an independent Windows desktop utility for managing MFG U
 
 It simplifies runtime preparation, installation, diagnostics and recovery while keeping users in control of changes to their game files.
 
-**Latest stable version: v1.2.0**
+**Latest stable version: v1.2.1**
 
 **Developer:** [ExiZz](https://github.com/ExiZz1)
 
@@ -128,7 +128,7 @@ XMX has additional runtime and integration requirements. Selecting a method does
 
 Only the approved production **public key** is embedded in the application. Users never need the publisher's private key or passphrase.
 
-Users upgrading from v1.1.0 can install v1.2.0 manually using the release ZIP.
+Users upgrading from v1.1.0 can install v1.2.1 manually using the release ZIP.
 
 ### Multilingual interface
 
@@ -178,7 +178,7 @@ Respect anti-cheat and online-game restrictions. This utility does not bypass th
 
 The original MFG Unlock addon requires a compatible **ReShade Full Add-on Support** installation.
 
-v1.2.0 provides a reviewed download, verification and visible official-installer workflow. Follow the official setup instructions and rescan afterward.
+v1.2.1 provides a reviewed download, verification and visible official-installer workflow. Follow the official setup instructions and rescan afterward.
 
 Installing the MFG Unlock addon alone does not install ReShade or establish a compatible rendering integration.
 
