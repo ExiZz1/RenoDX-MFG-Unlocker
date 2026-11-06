@@ -4,7 +4,7 @@ RenoDX MFG Unlocker is an independent Windows desktop utility for managing MFG U
 
 It simplifies runtime preparation, installation, diagnostics and recovery while keeping users in control of changes to their game files.
 
-**Latest stable version: v1.2.1**
+**Latest stable version: v1.3.0**
 
 **Developer:** [ExiZz](https://github.com/ExiZz1)
 
@@ -18,7 +18,6 @@ It simplifies runtime preparation, installation, diagnostics and recovery while 
 
 For manual installation, download:
 
-**`RenoDX_MFG_Unlocker_v1.2.0_Windows_x64.zip`**
 
 Extract the complete archive and launch `RenoDX MFG Unlocker.exe`.
 
