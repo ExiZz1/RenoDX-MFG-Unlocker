@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../tools/OwnerReleaseKeyCrypto.cs" Link="Publisher/OwnerReleaseKeyCrypto.cs"/>
+    <ProjectReference Include="..\..\RenoDXMfgUnlocker\RenoDXMfgUnlocker.csproj" />
+    <None Include="..\..\RenoDXMfgUnlocker\App.xaml" Link="AppResources.xaml" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="..\..\RenoDXMfgUnlocker\Assets\RenoDX.ico" Link="Assets\RenoDX.ico" />
+    <Resource Include="..\..\RenoDXMfgUnlocker\Assets\RenoDX.png" Link="Assets\RenoDX.png" />
+  </ItemGroup>
+</Project>

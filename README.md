@@ -1,229 +1,110 @@
-# RenoDX MFG Unlocker
+# RenoDX MFG Unlocker v1.4.0
 
-RenoDX MFG Unlocker is an independent Windows desktop utility for managing MFG Unlock addons, NVIDIA Streamline components, Intel XeMFG runtime files, ReShade setup and game-specific configuration.
+Windows x64 utility by **ExiZz** for MFG Unlock addon/runtime maintenance, version-aware saved settings, diagnostics and recoverable managed file changes.
 
-It simplifies runtime preparation, installation, diagnostics and recovery while keeping users in control of changes to their game files.
+Application: https://github.com/ExiZz1/RenoDX-MFG-Unlocker  
+Original MFG Unlock: **Mateus Jorge / mavismmg and contributors** — https://github.com/mavismmg/MFGAdaUnlock-RenoDx
 
-**Latest stable version: v1.3.0**
+This is an independent utility. ExiZz is not the original addon author. NVIDIA, Intel and ReShade do not endorse this application.
 
-**Developer:** [ExiZz](https://github.com/ExiZz1)
+## New in v1.4.0
 
-**Original MFG Unlock addon:** [MFGAdaUnlock-RenoDx](https://github.com/mavismmg/MFGAdaUnlock-RenoDx) — developed by **Mateus Jorge / mavismmg and contributors**.
+See [release notes](RELEASE_NOTES_v1.4.0.md) for the changes in v1.4.0.
 
----
+## Introduced in v1.3.0
 
-## Download
+- MFG Unlock 1.8.5: unchanged source declarations are labelled for **reconfirmation**, not as entirely new settings. Both releases are fully analyzed; each new release still requires explicit approval and keeps its own write scope. Type/range/default/dependency/file/editor changes are not treated as unchanged. Synthetic 1.8.6/1.9.0 names verify the general rule.
+- `[RenoDX.MFGUnlock] DynamicMaxMultiplier` is discovered **read-only** in 1.8.5. Its custom C++ validation/DRS hook is outside the finite declaration grammar. Supported upstream values are0(Auto),2,3,4,5,6, default0; game restart required. Configure it in the original addon panel for now. A separately reviewed owner-signed catalog can support it later; no new production catalog is bundled.
 
-### [Download the latest release](https://github.com/ExiZz1/RenoDX-MFG-Unlocker/releases/latest)
+- **Discover settings from the official addon source**, without updating this EXE or requiring a new RenoDX catalog for each recognized declaration. Fetch and analysis are explicit actions; inspect original source evidence and approve before adding settings. No INI write occurs during discovery or approval.
+- **39 reviewed baseline definitions**, including the unchanged owner-signed Revision 2. New parameters join existing collapsible groups across both INI files. General / Advanced / Other retain pending edits and the shared Save / Discard / Reload workflow.
+- **GenericGate, MFG Unlock 1.8.4:** the owner successfully discovered, saved and reloaded this Boolean through dev.5 without an EXE update or new signed catalog. Final nonvisual tests reproduce discovery and byte-exact Save/Restore in isolated fixtures. This is an owner-reported real test, not a new gameplay claim for every configuration.
+- **Signed RenoDX catalogs remain a fallback**, separately verified with catalog-domain RSA-PSS/SHA-256. Source approval is locally cached for the Windows user; it does not turn upstream code into an owner-signed catalog.
+- **Optional official-addon release notifications**, off by default, metadata only and at most once per 24 hours across launches. Source download/analysis and import always require your action. This is separate from application self-update and catalog checks.
+- **Eight live-switchable UI languages:** English, Ukrainian, Polish, German, Spanish, French, Czech and Brazilian Portuguese. Future upstream titles/descriptions stay in their original language with localized provenance when no reviewed translation exists.
 
-For manual installation, download:
+### Discovery safety and limits
 
+The analyzer understands a finite reviewed C++ declaration grammar, not arbitrary C++. It never executes downloaded source. Supported explicit Boolean/Integer/Enum declarations can supply metadata; unknown readers, computed defaults, changed editor frameworks, internal/learned state and unresolved dependencies remain read-only. New destination files, types or dependency semantics can still require an EXE update or reviewed signed catalog.
 
-Extract the complete archive and launch `RenoDX MFG Unlocker.exe`.
+Protected builtin/owner definitions cannot be overwritten by source discovery. Approval rollback and conflicting commits for the same approved release are refused. A recognized source definition is scoped to the reviewed addon release, not automatically certified for all future source revisions. Existing minimum-version capability inheritance from v1.2.1 remains.
 
-The application is distributed as a **self-contained Windows x64 build**. No separate .NET installation is required.
+## Start or update
 
-The additional `.zip.update.json` and `.zip.sig` release assets are used by the secure application updater. Users installing manually only need the ZIP.
+1. Extract the complete Windows x64 ZIP to a writable application folder **outside any game folder**. Run `RenoDX MFG Unlocker.exe`. The .NET 8 desktop runtime is included; a separate .NET installation is not required.
+2. Choose the installed game and confirm its actual main EXE. Review all proposed paths and file changes. Close the game before installing or changing configuration.
+3. Use Home to browse the original MFG Unlock releases, read release notes and install/update the selected `renodx-mfgunlock.addon64` beside the confirmed EXE. Installing this addon does not install ReShade or guarantee runtime compatibility.
+4. Use DLL Installation for supported NVIDIA/Intel workflows; inspect Preview before confirming Apply. Use Transactions / Restore for changes recorded by the managed transaction system.
 
-## Features
+When upgrading manually from v1.1.0 or another older build, extract v1.4.0 into a separate application folder. Keep your existing settings and recovery storage. Do not delete recovery originals or replace game DLLs by hand as part of the application update.
 
-### MFG Unlock addon management
+## NVIDIA runtime workflows
 
-- Browse releases from the original MFG Unlock repository.
-- Select an installed game and confirm its main executable.
-- Read release notes inside the application.
-- Install or update the selected addon release.
-- Inspect the installed addon and its supported configuration.
+- **Verified Update** retains the reviewed coherent Streamline/DLSS-G workflows and their prerequisites. Reviewed pairs include Streamline 2.14.1 + DLSS-G 310.9.1 and Streamline 2.14.16 + DLSS-G 310.9.16. A documented version pair is not a certification of every game.
+- **Manual SDK DLL Management** inventories supported production files from a verified official NVIDIA SDK, allows explicit supported file selections and shows Add / Replace / No Change with source, version and hash details. It does not silently approve unknown configurations or invent a new Frame Generation integration.
+- Sources, archive/member hashes, native architecture, publisher signatures where applicable, target identity and current file/process state are checked. Critical mismatches remain blocked. Downloaded NVIDIA binaries are not bundled with this application.
 
-### NVIDIA Dynamic MFG
+## Intel XeMFG / XeLL
 
-- Browse official NVIDIA Streamline SDK releases.
-- Download, verify and prepare supported production components.
-- Inspect existing Streamline and DLSS-G files, versions and locations.
-- Use **Verified Update** where its documented runtime and integration requirements are satisfied.
-- Use **Manual NVIDIA SDK DLL Installation** for explicit, supported component selections.
-- Review Add, Replace and No Change actions before applying.
-- Preserve coherent runtime pairs and dependency restrictions.
-- Avoid unnecessary replacements when file hashes already match.
+The existing Intel installer prepares the pinned, reviewed XeSS-FG / XeLL pair (libxess_fg.dll 1.3.1.78 and libxell.dll 1.3.2.10) with its required notices. SDK version and DLL version are distinct. Official Latest does not mean MFG Unlock Compatible: downloading a newer SDK does not change the Wizard's compatibility catalog.
 
-Manual DLL management does not create a working Frame Generation integration simply by copying files. Unknown configurations and critical mismatches remain restricted.
+Intel runtime installation does not require an NVIDIA DLSS-G provider in every supported scenario. It still requires supported addon capabilities, integration inputs, API and an explicitly confirmed destination. Vulkan remains experimental and version/integration gated. No universal game or GPU support is promised.
 
-### Intel XeMFG / XeLL
+## ReShade Full Add-on Support
 
-- Browse official Intel XeSS SDK releases.
-- Separate selected SDK contents from the pinned MFG Unlock compatibility catalog.
-- Prepare the reviewed XeSS-FG and XeLL runtime pair.
-- Keep SDK versions distinct from actual DLL versions.
-- Support reviewed D3D12 workflows.
-- Expose experimental Vulkan functionality only where addon capabilities and integration requirements permit it.
+The ReShade page inspects known local proxies and provides a verified download/visible launch workflow for the reviewed official Full Add-on Support installer. SHA-256 and publisher checks repeat before launch. Follow the official installer's warnings and selection steps, then rescan in RenoDX MFG Unlocker.
 
-**Official Latest does not mean MFG Unlock Compatible.** Downloading a newer SDK does not automatically replace the runtime pair used by the installer.
+This version does not use unattended/headless, forced-update or preselected target/API command lines. Unknown proxy conflicts and known unsafe paths remain blocked. External ReShade Setup changes are **not automatically covered by managed Restore**; retain your own recovery plan for those operations. System Vulkan layers are not managed by this utility.
 
-### ReShade Full Add-on Support
+## MFG Settings and experimental XMX
 
-- Inspect known ReShade proxy files and installation evidence.
-- Download and verify the reviewed official Full Add-on Support installer.
-- Check package integrity and publisher information before launch.
-- Open the official installer through its normal visible workflow.
-- Rescan afterward to inspect the resulting installation.
+Version-aware MFG Settings supports reviewed addon schemas, including MFG Unlock 1.8.0–1.8.5. General / Advanced / Other share Save / Discard / Reload and retain pending independent edits. Saved, proposed and default values are distinguished; unsupported versions and running-game writes remain blocked. Managed configuration changes preserve unrelated INI sections, keys, comments and encoding, with conflict checks and transactional recovery.
 
-The application does not use unattended installation, forced-update command lines or automatic system Vulkan-layer management.
+For addon 1.8.0 or newer, the generation selector supports NVIDIA DLSS-G, Intel XeMFG (CUDA) and experimental XeMFG via DLSS-G (XMX). It changes only `[Backend] Selected` and `[DLSSG] XmxGenerator`. HUD stabilization, Vulkan, quality and other options remain independent. XMX has separate runtime/input requirements and NVIDIA-only quality control restrictions. Addon 1.8.3 or newer also permits experimental NVIDIA Dynamic MFG with XMX using the documented runtime stack; this is not a universal compatibility guarantee. Restart the game where indicated; selecting or saving a method is not proof it is active.
 
-Changes made by the external ReShade installer are outside the application's managed Restore transactions.
+## Components, diagnostics and recovery
 
-### Safe installation and recovery
+- Components / SDK separates NVIDIA and Intel releases, selected SDK contents, prepared local files and pinned compatibility catalogs. Missing DLLs do not by themselves mean a broken game.
+- Runtime Diagnostics separates files found on disk, runtime-loaded evidence and actual generation activity. Historical log sessions are not reported as current runtime confirmation; unavailable evidence remains Unknown.
+- Managed Apply checks for stale previews, running games, unsafe/reparse paths and changed sources/targets. Original files are preserved before replacement; written bytes are checked afterward. Transactions support rollback and Restore, refusing to overwrite unrelated later changes. Keep the original transaction/key/recovery storage: a missing or changed backup/manifest/key can prevent safe Restore.
+- The original addon-install workflow remains separate. Do not assume every external/manual operation has a managed transaction or backup.
 
-- Review the exact file plan before applying changes.
-- Confirm the target directory explicitly.
-- Validate sources, SHA-256 hashes and applicable digital signatures.
-- Recheck files and running-game state before writing.
-- Preserve original files for managed replacements.
-- Verify installed bytes after copying.
-- Record managed operations as transactions.
-- Roll back supported failures and restore verified originals.
-- Refuse unsafe paths, stale plans and conflicting external changes.
+## Application updates
 
-Managed recovery covers recorded operations. It should not be treated as a backup of every external installer or manual modification.
+Check for Updates uses Stable releases from this application's official GitHub repository. Startup checks are optional and off by default. Download Update remains available; Download and Install additionally requires the owner's RSA-PSS/SHA-256 signed manifest and detached signature, matching package/member hashes, supported single-EXE inventory, safe target/process state and your confirmation before restart.
 
-### Runtime Diagnostics
+The client contains only the approved **public** key `owner-release-2026`. Users never need the publisher's private key or passphrase. Missing/invalid signed assets cannot install. The updater preserves unrelated files and provides bounded backup/rollback; process creation alone is not a full application-health check. It does not update game files or driver profiles.
 
-- Inspect components found on disk.
-- Review available runtime logs and transaction evidence.
-- Separate historical sessions from current-session evidence.
-- Distinguish installed files from confirmed runtime loading.
-- Avoid declaring Frame Generation active without sufficient evidence.
+## Requirements and compatibility limits
 
-**Files installed**, **runtime loaded** and **Frame Generation active** are separate results.
+- Windows x64 with the game's own supported graphics API, hardware and driver requirements. Self-contained .NET does not provide missing GPU/game dependencies.
+- ReShade Full Add-on Support and a compatible MFG Unlock addon/integration are needed where the selected scenario requires them. Upscaling, Frame Generation and Multi Frame Generation are different features.
+- **Copying DLLs does not create a Frame Generation integration or guarantee MFG works in a game.** SDK versions, hashes and signatures establish file evidence, not gameplay compatibility or runtime activation.
+- Use mods only where the game permits them. Anti-cheat, protected/online titles and unsupported targets may prohibit modification; this utility does not bypass those restrictions. Follow the game and mod authors' guidance.
+- Unknown profiles, unverified replacements, unknown dependencies and unsafe paths can remain blocked. NVIDIA App/Profile Inspector overrides are not activated automatically. No driver DLLs are installed by these workflows.
 
-### MFG Settings
+## Languages and licenses
 
-- Access settings through **General / Advanced / Other**.
-- Use version-aware definitions, including reviewed MFG Unlock 1.8.0 settings.
-- Compare saved, proposed and default values.
-- Preserve pending edits while navigating between categories.
-- Use one shared Save / Discard / Reload workflow.
-- Preserve unrelated INI sections, keys, comments and encoding.
-- Block unsupported configuration writes and changes while the game is running.
+English, Ukrainian, Polish, German, Spanish, French, Czech and Brazilian Portuguese are supported, with live language switching.
 
-For supported MFG Unlock 1.8.0 configurations, the generation selector provides:
+RenoDX MFG Unlocker is **Source Available**. The [license](LICENSE) permits personal, non-commercial use of official builds and permits viewing and auditing the published source. Modification, reuse, redistribution of the covered source or of third-party builds, and commercial use require prior written permission from ExiZz, subject to statutory and platform rights and prior permissions.
 
-- **NVIDIA DLSS-G**
-- **Intel XeMFG (CUDA)**
-- **XeMFG via DLSS-G (XMX)** — experimental
+Third-party materials retain their own terms, including the [upstream MFG Unlock MIT license](LICENSES/MFGUnlock-Metadata-MIT.txt) and the Microsoft runtime notices. See [Third-party notices](THIRD_PARTY_NOTICES.md). NVIDIA/Intel runtime and ReShade packages are downloaded separately. Applicable upstream notices must remain with separately prepared components.
 
-Method selection changes only the supported `[Backend] Selected` and `[DLSSG] XmxGenerator` values. HUD stabilization, Vulkan options, quality controls and other advanced settings remain independently configurable.
+Official projects: https://github.com/NVIDIA-RTX/Streamline · https://github.com/intel/xess · https://reshade.me/ · https://github.com/crosire/reshade
 
-XMX has additional runtime and integration requirements. Selecting a method does not prove that it is active in the game.
+## Build from source (Windows x64)
 
-### GitHub Updates and secure self-update
+These instructions are for maintainers and others whose authorization covers building the application. See the [license](LICENSE) for the terms governing the ExiZz-owned code.
 
-- Check for newer Stable releases from this repository.
-- Enable optional startup checks, which are off by default.
-- Download application updates manually.
-- Use authenticated Download and Install when all requirements are satisfied.
-- Verify an owner-signed RSA-PSS/SHA-256 manifest and package/member hashes.
-- Confirm replacement and restart explicitly.
-- Preserve recovery information for the application update.
+Install .NET SDK 8.0.426 or a compatible 8.0 feature-band SDK allowed by `global.json`, including the Windows Desktop targeting pack.
 
-Only the approved production **public key** is embedded in the application. Users never need the publisher's private key or passphrase.
+```powershell
+dotnet restore .\RenoDXMfgUnlocker\RenoDXMfgUnlocker.csproj -r win-x64
+dotnet publish .\RenoDXMfgUnlocker\RenoDXMfgUnlocker.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:DebugType=None -p:DebugSymbols=false -o .\artifacts\v1.4.0
+pwsh -File .\tools\Test-NonVisual.ps1
+```
 
-Users upgrading from v1.1.0 can install v1.2.1 manually using the release ZIP.
+Run the public nonvisual test selection with the command above. It uses a console test harness and does not require unpublished signing tools. See the [build and test guide](BUILDING.md) for its scope and prerequisites.
 
-### Multilingual interface
-
-Available in six languages:
-
-- English
-- Ukrainian
-- Polish
-- German
-- Spanish
-- French
-
-The interface language can be changed without restarting the application.
-
-## Installation
-
-1. Download the Windows x64 ZIP from [GitHub Releases](https://github.com/ExiZz1/RenoDX-MFG-Unlocker/releases).
-2. Extract the complete archive to a writable application folder **outside your game directories**.
-3. Run `RenoDX MFG Unlocker.exe`.
-4. Select your game and confirm the correct executable.
-5. Choose the required addon, runtime, settings or diagnostic workflow.
-6. Review compatibility information and confirm the target directory.
-7. Inspect the Preview before approving any changes.
-
-Close the game before installing, changing configuration or restoring files.
-
-When updating the application manually, retain your existing settings and recovery storage.
-
-## Important compatibility information
-
-**Installing DLLs does not automatically add Frame Generation support to a game.**
-
-Compatibility depends on the game's rendering API, integration inputs, addon version, runtime components, hardware and drivers.
-
-- A file found on disk may not be loaded by the game.
-- A loaded runtime does not by itself prove that Frame Generation is active.
-- A verified signature or matching SHA-256 establishes file integrity/authenticity evidence, not gameplay compatibility.
-- Upscaling, Frame Generation and Multi Frame Generation are different capabilities.
-- XMX and supported Vulkan workflows remain experimental and may have game-specific limitations.
-- NVIDIA App or driver-profile overrides are not activated automatically.
-
-Always consult the [original MFG Unlock documentation](https://github.com/mavismmg/MFGAdaUnlock-RenoDx) before changing a game's runtime configuration.
-
-Respect anti-cheat and online-game restrictions. This utility does not bypass them.
-
-## ReShade requirement
-
-The original MFG Unlock addon requires a compatible **ReShade Full Add-on Support** installation.
-
-v1.2.1 provides a reviewed download, verification and visible official-installer workflow. Follow the official setup instructions and rescan afterward.
-
-Installing the MFG Unlock addon alone does not install ReShade or establish a compatible rendering integration.
-
-## Security and recovery
-
-Review every proposed file operation and maintain your own backups.
-
-Restore requires the corresponding verified transaction, recovery files and local protection data. Missing or modified recovery material, or files changed by another program, can prevent safe automatic restoration.
-
-The release-package signature is separate from Windows Authenticode signing. The application EXE is not Authenticode-signed, so Windows may display an unrecognized publisher warning.
-
-Download application packages only from this repository's official Releases.
-
-NVIDIA/Intel runtime DLLs and ReShade installers are obtained separately; they are not bundled in the application ZIP.
-
-## Source code
-
-The source files currently published in this repository originate from an earlier development release. They do **not** represent the complete source corresponding to the v1.2.0 Windows binary.
-
-Download the application from the separately attached Windows x64 release ZIP.
-
-GitHub-generated **Source code (zip)** and **Source code (tar.gz)** archives reflect the tagged repository contents. They are not the runnable Windows application package.
-
-## Credits
-
-**[ExiZz](https://github.com/ExiZz1)** — developer of the RenoDX MFG Unlocker desktop utility.
-
-**[Mateus Jorge / mavismmg](https://github.com/mavismmg) and contributors** — developers of the original [MFGAdaUnlock-RenoDx](https://github.com/mavismmg/MFGAdaUnlock-RenoDx) addon and its underlying functionality.
-
-Related projects:
-
-- [NVIDIA Streamline](https://github.com/NVIDIA-RTX/Streamline)
-- [Intel XeSS](https://github.com/intel/xess)
-- [ReShade](https://reshade.me/)
-- [.NET](https://dotnet.microsoft.com/)
-
-RenoDX MFG Unlocker is an independent utility, not an official application of the original MFG Unlock project, NVIDIA, Intel or ReShade.
-
-Third-party components remain subject to their respective licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the runtime license files included with the release.
-
-## Releases and updates
-
-Application builds are available on the [GitHub Releases page](https://github.com/ExiZz1/RenoDX-MFG-Unlocker/releases).
-
-Read the release notes for installation instructions, compatibility requirements and known limitations.
-
----
-
-**RenoDX MFG Unlocker v1.2.0 — by ExiZz.**
+Release packages use the existing eight-file updater inventory. Only the owner signs the final ZIP locally; never embed private keys or publish synthetic test packages. Source builds are functionally reproducible with the documented toolchain, but bit-identical binaries are not promised across different build paths/toolchains.

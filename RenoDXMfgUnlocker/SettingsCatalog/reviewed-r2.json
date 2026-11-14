@@ -1,0 +1,1059 @@
+{
+  "Schema": 1,
+  "Purpose": "renodx-mfg-settings-catalog",
+  "KeyId": "owner-release-2026",
+  "Revision": 2,
+  "Entries": [
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGFlipMeteringLeadUs",
+      "Type": "Integer",
+      "Default": "2500",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "How early frames are handed to the driver's flip metering.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L33",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 8000,
+      "Translations": {
+        "en-US": {
+          "Label": "Frame submission lead (µs)",
+          "Description": "How early frames are submitted to driver flip metering, in microseconds."
+        },
+        "uk-UA": {
+          "Label": "Випередження подачі кадрів (мкс)",
+          "Description": "Наскільки раніше кадри передаються механізму flip metering драйвера, у мікросекундах."
+        },
+        "pl-PL": {
+          "Label": "Wyprzedzenie przekazywania klatek (µs)",
+          "Description": "O ile wcześniej klatki są przekazywane do mechanizmu flip metering sterownika, w mikrosekundach."
+        },
+        "de-DE": {
+          "Label": "Vorlauf der Frame-Übergabe (µs)",
+          "Description": "Wie früh Frames an das Flip Metering des Treibers übergeben werden, in Mikrosekunden."
+        },
+        "es-ES": {
+          "Label": "Antelación de envío de fotogramas (µs)",
+          "Description": "Cuánto antes se entregan los fotogramas al flip metering del controlador, en microsegundos."
+        },
+        "fr-FR": {
+          "Label": "Avance d’envoi des images (µs)",
+          "Description": "Avance de remise des images au flip metering du pilote, en microsecondes."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGFlipQueueBufferPct",
+      "Type": "Integer",
+      "Default": "50",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "How much of the frame interval the flip queue buffers.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L35",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 100,
+      "Requires": [
+        {
+          "Key": "XeFGFlipQueue",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Presentation queue buffer (%)",
+          "Description": "Portion of the frame interval buffered by the experimental flip queue."
+        },
+        "uk-UA": {
+          "Label": "Буфер черги показу (%)",
+          "Description": "Частка інтервалу кадру, яку буферизує експериментальна черга показу."
+        },
+        "pl-PL": {
+          "Label": "Bufor kolejki prezentacji (%)",
+          "Description": "Część odstępu między klatkami buforowana przez eksperymentalną kolejkę prezentacji."
+        },
+        "de-DE": {
+          "Label": "Puffer der Präsentationswarteschlange (%)",
+          "Description": "Anteil des Frame-Intervalls, den die experimentelle Flip-Warteschlange puffert."
+        },
+        "es-ES": {
+          "Label": "Búfer de la cola de presentación (%)",
+          "Description": "Parte del intervalo de fotograma almacenada por la cola experimental."
+        },
+        "fr-FR": {
+          "Label": "Tampon de la file de présentation (%)",
+          "Description": "Part de l’intervalle d’image mise en tampon par la file expérimentale."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGFlipQueueFirst",
+      "Type": "Enum",
+      "Default": "ready",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "What the flip queue presents first.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L36",
+      "RequiresRestart": true,
+      "Values": [
+        "ready",
+        "buffer"
+      ],
+      "Requires": [
+        {
+          "Key": "XeFGFlipQueue",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "First frame from the presentation queue",
+          "Description": "Choose what the experimental flip queue presents first: ready or buffered content."
+        },
+        "uk-UA": {
+          "Label": "Перший кадр із черги показу",
+          "Description": "Визначає, що експериментальна черга показує спочатку: готовий або буферизований вміст."
+        },
+        "pl-PL": {
+          "Label": "Pierwsza klatka z kolejki prezentacji",
+          "Description": "Wybiera, co eksperymentalna kolejka pokazuje najpierw: gotową lub buforowaną zawartość."
+        },
+        "de-DE": {
+          "Label": "Erster Frame aus der Präsentationswarteschlange",
+          "Description": "Legt fest, ob die experimentelle Warteschlange zuerst fertige oder gepufferte Inhalte zeigt."
+        },
+        "es-ES": {
+          "Label": "Primer fotograma de la cola de presentación",
+          "Description": "Elige si la cola experimental presenta primero el contenido listo o el almacenado."
+        },
+        "fr-FR": {
+          "Label": "Première image de la file de présentation",
+          "Description": "Détermine si la file expérimentale présente d’abord le contenu prêt ou mis en tampon."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGNativeBuffers",
+      "Type": "Integer",
+      "Default": "10",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Back buffers used by the flip queue.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L37",
+      "RequiresRestart": true,
+      "Minimum": 2,
+      "Maximum": 16,
+      "Requires": [
+        {
+          "Key": "XeFGFlipQueue",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Presentation queue back buffers",
+          "Description": "Number of back buffers used by the experimental flip queue."
+        },
+        "uk-UA": {
+          "Label": "Зворотні буфери черги показу",
+          "Description": "Кількість зворотних буферів, які використовує експериментальна черга показу."
+        },
+        "pl-PL": {
+          "Label": "Bufory tylne kolejki prezentacji",
+          "Description": "Liczba buforów tylnych używanych przez eksperymentalną kolejkę prezentacji."
+        },
+        "de-DE": {
+          "Label": "Backbuffer der Präsentationswarteschlange",
+          "Description": "Anzahl der Backbuffer für die experimentelle Flip-Warteschlange."
+        },
+        "es-ES": {
+          "Label": "Búferes traseros de la cola de presentación",
+          "Description": "Cantidad de búferes traseros usados por la cola experimental."
+        },
+        "fr-FR": {
+          "Label": "Tampons arrière de la file de présentation",
+          "Description": "Nombre de tampons arrière utilisés par la file expérimentale."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGNativeLatency",
+      "Type": "Integer",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Latency requested from the SDK. 0 leaves it to the SDK.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L38",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 16,
+      "Translations": {
+        "en-US": {
+          "Label": "Requested SDK latency (frames)",
+          "Description": "Latency requested from the SDK in frames. Zero leaves the choice to the SDK."
+        },
+        "uk-UA": {
+          "Label": "Запитана затримка SDK (кадри)",
+          "Description": "Затримка, запитана в SDK, у кадрах. Нуль залишає вибір за SDK."
+        },
+        "pl-PL": {
+          "Label": "Żądane opóźnienie SDK (klatki)",
+          "Description": "Opóźnienie żądane od SDK w klatkach. Zero pozostawia wybór SDK."
+        },
+        "de-DE": {
+          "Label": "Angeforderte SDK-Latenz (Frames)",
+          "Description": "An das SDK übermittelte Latenz in Frames. Bei null entscheidet das SDK."
+        },
+        "es-ES": {
+          "Label": "Latencia solicitada al SDK (fotogramas)",
+          "Description": "Latencia solicitada al SDK en fotogramas. Cero deja la decisión al SDK."
+        },
+        "fr-FR": {
+          "Label": "Latence demandée au SDK (images)",
+          "Description": "Latence demandée au SDK en images. Zéro laisse le SDK décider."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "InvertedDepth",
+      "Type": "Enum",
+      "Default": "-1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Automatic uses the game's profile or what was learned for this executable. Wrong values cause heavy artifacts.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L39",
+      "RequiresRestart": true,
+      "Values": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Depth direction",
+          "Description": "Automatic uses the game profile or learned convention. A wrong depth direction can cause severe artifacts."
+        },
+        "uk-UA": {
+          "Label": "Напрямок глибини",
+          "Description": "Автоматичний режим використовує профіль гри або вивчене правило. Неправильний напрямок може спричинити сильні артефакти."
+        },
+        "pl-PL": {
+          "Label": "Kierunek głębi",
+          "Description": "Tryb automatyczny używa profilu gry lub wyuczonej konwencji. Błędny kierunek może powodować silne artefakty."
+        },
+        "de-DE": {
+          "Label": "Tiefenrichtung",
+          "Description": "Automatisch nutzt das Spielprofil oder eine erlernte Konvention. Eine falsche Tiefenrichtung kann starke Artefakte verursachen."
+        },
+        "es-ES": {
+          "Label": "Dirección de profundidad",
+          "Description": "Automático usa el perfil del juego o la convención aprendida. Una dirección incorrecta puede causar artefactos graves."
+        },
+        "fr-FR": {
+          "Label": "Sens de profondeur",
+          "Description": "Automatique utilise le profil du jeu ou la convention apprise. Un mauvais sens peut provoquer des artefacts importants."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "JitteredMotion",
+      "Type": "Enum",
+      "Default": "-1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Automatic uses the game's profile or what was learned for this executable. Wrong values cause shimmering.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L40",
+      "RequiresRestart": true,
+      "Values": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Jitter in motion vectors",
+          "Description": "Automatic follows the game profile or learned convention. A wrong setting can cause shimmering."
+        },
+        "uk-UA": {
+          "Label": "Джитер у векторах руху",
+          "Description": "Автоматичний режим враховує профіль гри або вивчене правило. Неправильне значення може спричинити мерехтіння."
+        },
+        "pl-PL": {
+          "Label": "Jitter w wektorach ruchu",
+          "Description": "Tryb automatyczny korzysta z profilu gry lub wyuczonej konwencji. Błędne ustawienie może powodować migotanie."
+        },
+        "de-DE": {
+          "Label": "Jitter in Bewegungsvektoren",
+          "Description": "Automatisch folgt dem Spielprofil oder einer erlernten Konvention. Ein falscher Wert kann Flimmern verursachen."
+        },
+        "es-ES": {
+          "Label": "Jitter en vectores de movimiento",
+          "Description": "Automático sigue el perfil del juego o la convención aprendida. Un ajuste incorrecto puede producir parpadeo."
+        },
+        "fr-FR": {
+          "Label": "Jitter dans les vecteurs de mouvement",
+          "Description": "Automatique suit le profil du jeu ou la convention apprise. Un mauvais réglage peut provoquer du scintillement."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Compatibility",
+      "Key": "RetainNativeOutput",
+      "Type": "Enum",
+      "Default": "-1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Keeps the game's own swap chain alive, for overlays that hold references to it. Automatic follows the game's profile.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L41",
+      "RequiresRestart": true,
+      "Values": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Preserve the game’s swap chain",
+          "Description": "Keep the game’s own swap chain alive for overlays that reference it. Automatic follows the game profile."
+        },
+        "uk-UA": {
+          "Label": "Зберігати ланцюжок показу гри",
+          "Description": "Зберігає власний ланцюжок показу гри для оверлеїв, які на нього посилаються. Автоматичний режим враховує профіль гри."
+        },
+        "pl-PL": {
+          "Label": "Zachowaj łańcuch wymiany gry",
+          "Description": "Utrzymuje łańcuch wymiany gry dla nakładek, które się do niego odwołują. Tryb automatyczny używa profilu gry."
+        },
+        "de-DE": {
+          "Label": "Swapchain des Spiels erhalten",
+          "Description": "Hält die eigene Swapchain des Spiels für darauf verweisende Overlays am Leben. Automatisch folgt dem Spielprofil."
+        },
+        "es-ES": {
+          "Label": "Conservar la cadena de intercambio del juego",
+          "Description": "Mantiene la cadena propia del juego para las superposiciones que la usan. Automático sigue el perfil del juego."
+        },
+        "fr-FR": {
+          "Label": "Conserver la chaîne de présentation du jeu",
+          "Description": "Maintient la chaîne propre au jeu pour les surcouches qui la référencent. Automatique suit le profil du jeu."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Adapters",
+      "Key": "FidelityFX",
+      "Type": "Boolean",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Feeds XeMFG from the game's FSR frame generation.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L42",
+      "RequiresRestart": true,
+      "Translations": {
+        "en-US": {
+          "Label": "Use FSR frame-generation inputs",
+          "Description": "Feed XeMFG from an existing FSR frame-generation integration. This does not create game integration."
+        },
+        "uk-UA": {
+          "Label": "Використовувати входи генерації кадрів FSR",
+          "Description": "Передає в XeMFG дані з наявної інтеграції генерації кадрів FSR. Не створює інтеграцію в грі."
+        },
+        "pl-PL": {
+          "Label": "Używaj danych wejściowych generowania klatek FSR",
+          "Description": "Przekazuje do XeMFG dane z istniejącej integracji generowania klatek FSR. Nie tworzy integracji w grze."
+        },
+        "de-DE": {
+          "Label": "FSR-Eingaben zur Frame-Generierung verwenden",
+          "Description": "Versorgt XeMFG aus einer vorhandenen FSR-Frame-Generierung. Erstellt keine Spielintegration."
+        },
+        "es-ES": {
+          "Label": "Usar entradas de generación de fotogramas FSR",
+          "Description": "Alimenta XeMFG desde una integración FSR existente de generación de fotogramas. No crea una integración."
+        },
+        "fr-FR": {
+          "Label": "Utiliser les entrées de génération d’images FSR",
+          "Description": "Alimente XeMFG depuis une intégration FSR de génération d’images existante. Ne crée pas d’intégration."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanGenerate",
+      "Type": "Boolean",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Off keeps the host running without generating, for comparison.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L46",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Generate frames on Vulkan",
+          "Description": "When off, the Vulkan host keeps running without generating frames, for comparison."
+        },
+        "uk-UA": {
+          "Label": "Генерація кадрів на Vulkan",
+          "Description": "Коли вимкнено, Vulkan-хост працює без генерації кадрів для порівняння."
+        },
+        "pl-PL": {
+          "Label": "Generowanie klatek w Vulkan",
+          "Description": "Po wyłączeniu host Vulkan działa bez generowania klatek, do porównania."
+        },
+        "de-DE": {
+          "Label": "Frames unter Vulkan generieren",
+          "Description": "Ausgeschaltet läuft der Vulkan-Host zum Vergleich ohne Frame-Generierung weiter."
+        },
+        "es-ES": {
+          "Label": "Generar fotogramas en Vulkan",
+          "Description": "Desactivado, el host Vulkan sigue funcionando sin generar fotogramas para comparar."
+        },
+        "fr-FR": {
+          "Label": "Générer des images sous Vulkan",
+          "Description": "Désactivé, l’hôte Vulkan continue de fonctionner sans générer d’images, pour comparaison."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanInputCopy",
+      "Type": "Enum",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "How the game's inputs reach the host. The test modes are for diagnosis.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L47",
+      "RequiresRestart": true,
+      "Values": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Vulkan input transfer",
+          "Description": "Choose how game inputs reach the Vulkan host. The test modes are for diagnostics only."
+        },
+        "uk-UA": {
+          "Label": "Передача вхідних даних Vulkan",
+          "Description": "Визначає, як вхідні дані гри потрапляють у Vulkan-хост. Тестові режими призначені лише для діагностики."
+        },
+        "pl-PL": {
+          "Label": "Przekazywanie danych wejściowych Vulkan",
+          "Description": "Określa sposób przekazania danych gry do hosta Vulkan. Tryby testowe służą wyłącznie diagnostyce."
+        },
+        "de-DE": {
+          "Label": "Vulkan-Eingabeübertragung",
+          "Description": "Legt fest, wie Spieleingaben den Vulkan-Host erreichen. Testmodi sind nur zur Diagnose vorgesehen."
+        },
+        "es-ES": {
+          "Label": "Transferencia de entradas Vulkan",
+          "Description": "Elige cómo llegan las entradas del juego al host Vulkan. Los modos de prueba son solo para diagnóstico."
+        },
+        "fr-FR": {
+          "Label": "Transfert des entrées Vulkan",
+          "Description": "Détermine comment les entrées du jeu atteignent l’hôte Vulkan. Les modes de test sont réservés au diagnostic."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanGameLatency",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Drives XeLL from the game's latency markers. Not measured in a game yet.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L49",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Vulkan game latency markers",
+          "Description": "Drive XeLL from the game’s latency markers. Upstream labels this experimental and not yet measured in a game."
+        },
+        "uk-UA": {
+          "Label": "Маркери затримки гри Vulkan",
+          "Description": "Керує XeLL через маркери затримки гри. Upstream позначає режим експериментальним і ще не виміряним у грі."
+        },
+        "pl-PL": {
+          "Label": "Znaczniki opóźnienia gry Vulkan",
+          "Description": "Steruje XeLL znacznikami opóźnienia gry. Upstream określa to jako eksperymentalne i jeszcze niezmierzone w grze."
+        },
+        "de-DE": {
+          "Label": "Latenzmarker des Vulkan-Spiels",
+          "Description": "Steuert XeLL über Latenzmarker des Spiels. Upstream bezeichnet dies als experimentell und noch nicht im Spiel vermessen."
+        },
+        "es-ES": {
+          "Label": "Marcadores de latencia del juego Vulkan",
+          "Description": "Controla XeLL mediante marcadores de latencia del juego. Upstream lo considera experimental y aún no medido en juego."
+        },
+        "fr-FR": {
+          "Label": "Marqueurs de latence du jeu Vulkan",
+          "Description": "Pilote XeLL via les marqueurs de latence du jeu. L’amont le décrit comme expérimental et pas encore mesuré en jeu."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicMFG",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Chooses the multiplier from a target frame rate. Not measured in a game yet.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L50",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Vulkan dynamic frame multiplier",
+          "Description": "Choose the multiplier from a target frame rate. Upstream labels this experimental and not yet measured in a game."
+        },
+        "uk-UA": {
+          "Label": "Динамічний множник кадрів Vulkan",
+          "Description": "Вибирає множник за цільовою частотою кадрів. Upstream позначає режим експериментальним і ще не виміряним у грі."
+        },
+        "pl-PL": {
+          "Label": "Dynamiczny mnożnik klatek Vulkan",
+          "Description": "Dobiera mnożnik do docelowej liczby klatek. Upstream określa to jako eksperymentalne i jeszcze niezmierzone w grze."
+        },
+        "de-DE": {
+          "Label": "Dynamischer Vulkan-Frame-Multiplikator",
+          "Description": "Wählt den Multiplikator anhand der Zielbildrate. Laut Upstream experimentell und noch nicht im Spiel vermessen."
+        },
+        "es-ES": {
+          "Label": "Multiplicador dinámico de fotogramas Vulkan",
+          "Description": "Elige el multiplicador según los FPS objetivo. Upstream lo considera experimental y aún no medido en juego."
+        },
+        "fr-FR": {
+          "Label": "Multiplicateur dynamique d’images Vulkan",
+          "Description": "Choisit le multiplicateur selon la fréquence cible. L’amont le décrit comme expérimental et pas encore mesuré en jeu."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicTargetFps",
+      "Type": "Integer",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Target output frame rate. 0 uses no target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L51",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 1000,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Vulkan target frame rate (FPS)",
+          "Description": "Target output frame rate for dynamic Vulkan generation. Zero means no target."
+        },
+        "uk-UA": {
+          "Label": "Цільова частота кадрів Vulkan (FPS)",
+          "Description": "Цільова вихідна частота кадрів для динамічної генерації Vulkan. Нуль означає відсутність цілі."
+        },
+        "pl-PL": {
+          "Label": "Docelowa liczba klatek Vulkan (FPS)",
+          "Description": "Docelowa wyjściowa liczba klatek dla dynamicznego generowania Vulkan. Zero oznacza brak celu."
+        },
+        "de-DE": {
+          "Label": "Vulkan-Zielbildrate (FPS)",
+          "Description": "Ziel-Ausgabebildrate für dynamische Vulkan-Generierung. Null bedeutet kein Ziel."
+        },
+        "es-ES": {
+          "Label": "Frecuencia objetivo Vulkan (FPS)",
+          "Description": "FPS de salida objetivo para la generación dinámica Vulkan. Cero significa sin objetivo."
+        },
+        "fr-FR": {
+          "Label": "Fréquence cible Vulkan (FPS)",
+          "Description": "Fréquence de sortie cible pour la génération dynamique Vulkan. Zéro signifie aucune cible."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicRounding",
+      "Type": "Enum",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "How the multiplier is rounded to reach the target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L52",
+      "RequiresRestart": true,
+      "Values": [
+        "0",
+        "1",
+        "2"
+      ],
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Vulkan multiplier rounding",
+          "Description": "Round the multiplier down, to nearest, or up to approach the target frame rate."
+        },
+        "uk-UA": {
+          "Label": "Округлення множника Vulkan",
+          "Description": "Округлює множник униз, до найближчого або вгору для наближення до цільової частоти."
+        },
+        "pl-PL": {
+          "Label": "Zaokrąglanie mnożnika Vulkan",
+          "Description": "Zaokrągla mnożnik w dół, do najbliższego lub w górę, aby zbliżyć się do celu FPS."
+        },
+        "de-DE": {
+          "Label": "Rundung des Vulkan-Multiplikators",
+          "Description": "Rundet den Multiplikator ab, zum nächsten Wert oder auf, um die Zielbildrate zu erreichen."
+        },
+        "es-ES": {
+          "Label": "Redondeo del multiplicador Vulkan",
+          "Description": "Redondea el multiplicador hacia abajo, al más cercano o hacia arriba para aproximarse a los FPS objetivo."
+        },
+        "fr-FR": {
+          "Label": "Arrondi du multiplicateur Vulkan",
+          "Description": "Arrondit le multiplicateur vers le bas, au plus proche ou vers le haut pour approcher la fréquence cible."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicAllow1x",
+      "Type": "Boolean",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Lets Dynamic MFG pause generation when the game already reaches the target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L53",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Allow Vulkan generation to pause at 1x",
+          "Description": "Allow dynamic generation to pause when the game already reaches the target frame rate."
+        },
+        "uk-UA": {
+          "Label": "Дозволити паузу генерації Vulkan на 1x",
+          "Description": "Дозволяє призупиняти динамічну генерацію, коли гра вже досягає цільової частоти кадрів."
+        },
+        "pl-PL": {
+          "Label": "Pozwól wstrzymać generowanie Vulkan przy 1x",
+          "Description": "Pozwala wstrzymać dynamiczne generowanie, gdy gra już osiąga docelową liczbę klatek."
+        },
+        "de-DE": {
+          "Label": "Vulkan-Generierung bei 1x pausieren lassen",
+          "Description": "Erlaubt eine Pause der dynamischen Generierung, wenn das Spiel die Zielbildrate bereits erreicht."
+        },
+        "es-ES": {
+          "Label": "Permitir pausar la generación Vulkan a 1x",
+          "Description": "Permite pausar la generación dinámica cuando el juego ya alcanza los FPS objetivo."
+        },
+        "fr-FR": {
+          "Label": "Autoriser la pause de génération Vulkan à 1x",
+          "Description": "Autorise la pause de génération dynamique lorsque le jeu atteint déjà la fréquence cible."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicTargetAsCap",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Also limits the output to the target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L54",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Use Vulkan target as frame-rate limit",
+          "Description": "Also limit the output frame rate to the dynamic generation target."
+        },
+        "uk-UA": {
+          "Label": "Використовувати ціль Vulkan як ліміт кадрів",
+          "Description": "Додатково обмежує вихідну частоту кадрів цільовим значенням динамічної генерації."
+        },
+        "pl-PL": {
+          "Label": "Używaj celu Vulkan jako limitu klatek",
+          "Description": "Dodatkowo ogranicza wyjściową liczbę klatek do celu dynamicznego generowania."
+        },
+        "de-DE": {
+          "Label": "Vulkan-Ziel als Bildratenlimit verwenden",
+          "Description": "Begrenzt zusätzlich die Ausgabebildrate auf das Ziel der dynamischen Generierung."
+        },
+        "es-ES": {
+          "Label": "Usar el objetivo Vulkan como límite de FPS",
+          "Description": "Limita también los FPS de salida al objetivo de generación dinámica."
+        },
+        "fr-FR": {
+          "Label": "Utiliser la cible Vulkan comme limite d’images",
+          "Description": "Limite aussi la fréquence de sortie à la cible de génération dynamique."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "StallTrace",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Logs long waits. Adds overhead.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L57",
+      "RequiresRestart": true,
+      "Translations": {
+        "en-US": {
+          "Label": "Log long waits",
+          "Description": "Record long waits for troubleshooting. Adds diagnostic overhead."
+        },
+        "uk-UA": {
+          "Label": "Журнал тривалих очікувань",
+          "Description": "Записує тривалі очікування для пошуку проблем. Додає діагностичне навантаження."
+        },
+        "pl-PL": {
+          "Label": "Rejestruj długie oczekiwania",
+          "Description": "Zapisuje długie oczekiwania do diagnostyki. Zwiększa narzut."
+        },
+        "de-DE": {
+          "Label": "Lange Wartezeiten protokollieren",
+          "Description": "Protokolliert lange Wartezeiten zur Fehlersuche. Verursacht Diagnoseaufwand."
+        },
+        "es-ES": {
+          "Label": "Registrar esperas largas",
+          "Description": "Registra esperas largas para diagnóstico. Añade sobrecarga."
+        },
+        "fr-FR": {
+          "Label": "Journaliser les longues attentes",
+          "Description": "Enregistre les longues attentes pour le diagnostic. Ajoute une surcharge."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "GpuTiming",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Logs GPU timing. Adds overhead.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L58",
+      "RequiresRestart": true,
+      "Translations": {
+        "en-US": {
+          "Label": "Log GPU timings",
+          "Description": "Record GPU timing for troubleshooting. Adds diagnostic overhead."
+        },
+        "uk-UA": {
+          "Label": "Журнал часу роботи GPU",
+          "Description": "Записує часові показники GPU для пошуку проблем. Додає діагностичне навантаження."
+        },
+        "pl-PL": {
+          "Label": "Rejestruj czasy GPU",
+          "Description": "Zapisuje czasy GPU do diagnostyki. Zwiększa narzut."
+        },
+        "de-DE": {
+          "Label": "GPU-Zeiten protokollieren",
+          "Description": "Protokolliert GPU-Zeiten zur Fehlersuche. Verursacht Diagnoseaufwand."
+        },
+        "es-ES": {
+          "Label": "Registrar tiempos de GPU",
+          "Description": "Registra tiempos de GPU para diagnóstico. Añade sobrecarga."
+        },
+        "fr-FR": {
+          "Label": "Journaliser les temps GPU",
+          "Description": "Enregistre les temps GPU pour le diagnostic. Ajoute une surcharge."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "SummaryIntervalMs",
+      "Type": "Integer",
+      "Default": "10000",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "How often the log receives a summary.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L59",
+      "RequiresRestart": true,
+      "Minimum": 100,
+      "Maximum": 600000,
+      "Translations": {
+        "en-US": {
+          "Label": "Diagnostic summary interval (ms)",
+          "Description": "How often a diagnostic summary is written to the log, in milliseconds."
+        },
+        "uk-UA": {
+          "Label": "Інтервал діагностичного підсумку (мс)",
+          "Description": "Як часто діагностичний підсумок записується в журнал, у мілісекундах."
+        },
+        "pl-PL": {
+          "Label": "Odstęp podsumowań diagnostycznych (ms)",
+          "Description": "Jak często podsumowanie diagnostyczne jest zapisywane w dzienniku, w milisekundach."
+        },
+        "de-DE": {
+          "Label": "Intervall der Diagnosezusammenfassung (ms)",
+          "Description": "Wie oft eine Diagnosezusammenfassung ins Protokoll geschrieben wird, in Millisekunden."
+        },
+        "es-ES": {
+          "Label": "Intervalo del resumen diagnóstico (ms)",
+          "Description": "Frecuencia con que se escribe un resumen diagnóstico en el registro, en milisegundos."
+        },
+        "fr-FR": {
+          "Label": "Intervalle du résumé de diagnostic (ms)",
+          "Description": "Fréquence d’écriture d’un résumé de diagnostic dans le journal, en millisecondes."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "ForceDRED",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Records DirectX crash data. Adds overhead.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L60",
+      "RequiresRestart": true,
+      "Translations": {
+        "en-US": {
+          "Label": "Capture DirectX crash diagnostics",
+          "Description": "Request DRED crash data for DirectX troubleshooting. Adds diagnostic overhead."
+        },
+        "uk-UA": {
+          "Label": "Збирати діагностику збоїв DirectX",
+          "Description": "Запитує дані DRED для діагностики збоїв DirectX. Додає діагностичне навантаження."
+        },
+        "pl-PL": {
+          "Label": "Zbieraj diagnostykę awarii DirectX",
+          "Description": "Żąda danych awarii DRED do diagnostyki DirectX. Zwiększa narzut."
+        },
+        "de-DE": {
+          "Label": "DirectX-Absturzdiagnose erfassen",
+          "Description": "Fordert DRED-Absturzdaten zur DirectX-Fehlersuche an. Verursacht Diagnoseaufwand."
+        },
+        "es-ES": {
+          "Label": "Capturar diagnóstico de fallos DirectX",
+          "Description": "Solicita datos DRED de fallos para diagnóstico DirectX. Añade sobrecarga."
+        },
+        "fr-FR": {
+          "Label": "Capturer le diagnostic des pannes DirectX",
+          "Description": "Demande les données de panne DRED pour le diagnostic DirectX. Ajoute une surcharge."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "D3D12DebugLayer",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Requires the Graphics Tools Windows feature. Slows the game heavily.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L61",
+      "RequiresRestart": true,
+      "Translations": {
+        "en-US": {
+          "Label": "D3D12 debug layer",
+          "Description": "Requires Windows Graphics Tools. The D3D12 debug layer can slow the game heavily."
+        },
+        "uk-UA": {
+          "Label": "Шар налагодження D3D12",
+          "Description": "Потребує Windows Graphics Tools. Шар налагодження D3D12 може суттєво сповільнити гру."
+        },
+        "pl-PL": {
+          "Label": "Warstwa debugowania D3D12",
+          "Description": "Wymaga Windows Graphics Tools. Warstwa debugowania D3D12 może znacznie spowolnić grę."
+        },
+        "de-DE": {
+          "Label": "D3D12-Debugschicht",
+          "Description": "Benötigt Windows Graphics Tools. Die D3D12-Debugschicht kann das Spiel stark verlangsamen."
+        },
+        "es-ES": {
+          "Label": "Capa de depuración D3D12",
+          "Description": "Requiere Windows Graphics Tools. La capa de depuración D3D12 puede ralentizar mucho el juego."
+        },
+        "fr-FR": {
+          "Label": "Couche de débogage D3D12",
+          "Description": "Nécessite Windows Graphics Tools. La couche de débogage D3D12 peut fortement ralentir le jeu."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "VulkanFaults",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Watches the Vulkan host for crashes and hangs.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L62",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ],
+      "Translations": {
+        "en-US": {
+          "Label": "Watch Vulkan crashes and hangs",
+          "Description": "Monitor the Vulkan host for crashes and hangs. This is a diagnostic option, not a recovery guarantee."
+        },
+        "uk-UA": {
+          "Label": "Стежити за збоями й зависаннями Vulkan",
+          "Description": "Стежить за збоями й зависаннями Vulkan-хоста. Це діагностика, а не гарантія відновлення."
+        },
+        "pl-PL": {
+          "Label": "Monitoruj awarie i zawieszenia Vulkan",
+          "Description": "Monitoruje awarie i zawieszenia hosta Vulkan. To diagnostyka, nie gwarancja odzyskania."
+        },
+        "de-DE": {
+          "Label": "Vulkan-Abstürze und Hänger überwachen",
+          "Description": "Überwacht den Vulkan-Host auf Abstürze und Hänger. Diagnose, keine Wiederherstellungsgarantie."
+        },
+        "es-ES": {
+          "Label": "Vigilar fallos y bloqueos de Vulkan",
+          "Description": "Vigila fallos y bloqueos del host Vulkan. Es diagnóstico, no garantía de recuperación."
+        },
+        "fr-FR": {
+          "Label": "Surveiller les pannes et blocages Vulkan",
+          "Description": "Surveille les pannes et blocages de l’hôte Vulkan. Diagnostic, sans garantie de récupération."
+        }
+      }
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "CpuTiming",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Collect bounded CPU timing samples in the native XeMFG presentation path. Adds profiling overhead; not displayed FPS or GPU timing. Restart the game after an external INI edit.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/0f7be83945f4ce88132d4e96b74c8995bf9b2614/src/addons/mfgunlock/xemfg/native_bridge.cpp#L554-L589",
+      "RequiresRestart": true,
+      "Requires": [],
+      "Translations": {
+        "en-US": {
+          "Label": "Collect XeMFG CPU timings",
+          "Description": "Collect bounded CPU timing samples in the native XeMFG presentation path. Adds profiling overhead; not displayed FPS or GPU timing. Restart the game after an external INI edit."
+        },
+        "uk-UA": {
+          "Label": "Збирати CPU-таймінги XeMFG",
+          "Description": "Збирає обмежену вибірку CPU-таймінгів у нативному шляху подання XeMFG. Додає навантаження профілювання; це не FPS показу й не час GPU. Після зовнішнього редагування INI перезапустіть гру."
+        },
+        "pl-PL": {
+          "Label": "Zbieraj czasy CPU XeMFG",
+          "Description": "Zbiera ograniczoną próbkę czasów CPU w natywnej ścieżce prezentacji XeMFG. Dodaje narzut profilowania; nie mierzy wyświetlanego FPS ani czasu GPU. Po zewnętrznej edycji INI uruchom grę ponownie."
+        },
+        "de-DE": {
+          "Label": "XeMFG-CPU-Zeiten erfassen",
+          "Description": "Erfasst ein begrenztes Fenster von CPU-Zeiten im nativen XeMFG-Präsentationspfad. Erzeugt Profiling-Aufwand; keine Anzeige-FPS oder GPU-Zeitmessung. Nach externer INI-Änderung das Spiel neu starten."
+        },
+        "es-ES": {
+          "Label": "Recopilar tiempos de CPU de XeMFG",
+          "Description": "Recopila una muestra limitada de tiempos de CPU en la presentación nativa de XeMFG. Añade sobrecarga; no mide FPS mostrados ni tiempos de GPU. Reinicie el juego tras editar el INI externamente."
+        },
+        "fr-FR": {
+          "Label": "Collecter les temps CPU de XeMFG",
+          "Description": "Collecte un échantillon limité de temps CPU dans la présentation native XeMFG. Ajoute une surcharge ; ne mesure ni les FPS affichés ni les temps GPU. Redémarrez le jeu après une modification externe de l’INI."
+        }
+      }
+    }
+  ]
+}

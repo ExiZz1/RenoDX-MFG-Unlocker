@@ -1,0 +1,1802 @@
+[
+  {
+    "Culture": "uk-UA",
+    "Key": "EXE: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeMFG: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "NVIDIA STREAMLINE",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "NVIDIA DEEPDVC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "uk-UA",
+    "Key": "{0} · {1} · PID {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "EXE: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeMFG: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "BETA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "TEST",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Mateus Jorge / mavismmg",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pl-PL",
+    "Key": "{0} · {1} · PID {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Details",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Status",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "STATUS",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "EXE: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Status: {0}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeMFG: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "ALPHA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "BETA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "TEST",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA Corporation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "RenoDX MFG Unlocker Updates",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA STREAMLINE",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SL.DLSS PLUGIN",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA Deep Learning SuperSampling",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "NVIDIA DEEPDVC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "MFG UNLOCKER",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Mateus Jorge / mavismmg",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "/ MFG UNLOCKER",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "Status: {3}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "de-DE",
+    "Key": "{0} · {1} · PID {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "EXE: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeMFG: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "{0} bytes",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "{0} · {1} · {2} bytes",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Vulkan XeMFG (experimental)",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "XMX (experimental)",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "General",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "BETA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Experimental",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "MFG Unlock Compatible · XeSS-FG",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "{0} · {1} bytes\nSHA-256 {2}\n{3}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Mateus Jorge / mavismmg",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "{0} · {1} bytes",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "es-ES",
+    "Key": "{0} · {1} · PID {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Action",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Source",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Architecture",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Transaction",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "STABLE",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "ALPHA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Classification",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "TEST",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Mateus Jorge / mavismmg",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "fr-FR",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Streamline SDKs",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "EXE: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeMFG: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Restart: {0}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Disk: {0}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "DLSS-G DLL (*.dll)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SDK ZIP (*.zip)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Disk",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Streamline plugin",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "ALPHA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "ReShade — Full Add-on Support",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "DLSS Super Resolution plugin",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "DLSS Ray Reconstruction plugin",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "DLSS Frame Generation plugin",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "ReShade Full Add-on Support",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "BETA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "TEST",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA Corporation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Streamline Reflex plugin",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA STREAMLINE",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SL.DLSS PLUGIN",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "NVIDIA DEEPDVC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Mateus Jorge / mavismmg",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "cs-CZ",
+    "Key": "{0} · {1} · PID {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Streamline SDKs",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Status",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "EXE: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Status: {0}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeMFG: {0}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "{0} bytes",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "DLSS-G DLL (*.dll)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SDK ZIP (*.zip)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "[{0}] {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "{0} · {1} · {2} bytes",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeSS-FG 1.3.1.78 / XeLL 1.3.2.10",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Streamline + DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "XeSS Frame Generation + Xe Low Latency",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Vulkan (Experimental)",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Vulkan XeMFG (experimental)",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "DLSS Super Resolution",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "ReShade — Full Add-on Support",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "NVIDIA DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeMFG (CUDA)",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "XeMFG via DLSS-G (XMX, experimental)",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "XMX (experimental)",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "MFG Unlock 1.8.0 / XMX",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "NVIDIA Streamline / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeMFG / XeLL",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "ReShade Full Add-on Support",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "BETA",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "RC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "MFG Unlock",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "NVIDIA / DLSS-G",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeFG / XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Vulkan",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Experimental",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "/RenoDX MFG Unlocker.exe",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "The Witcher 3: Wild Hunt — Remastered",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "DLSS Frame Generation",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "RenoDX MFG Unlocker",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SDK ZIP (*.zip)|*.zip",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeSS SDK",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel SDK: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel SDK:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "ReShade — Full Add-on Support ·",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "{0} · {1} bytes\nSHA-256 {2}\n{3}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeMFG",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "NVIDIA DLSS Ray Reconstruction",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "NVIDIA DEEPDVC",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeMFG:",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeMFG: ",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Mateus Jorge / mavismmg",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Intel XeSS",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SHA-256: {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SHA-256: {3}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SHA-256: {4}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "API: {1}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "{0} · {1} bytes",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SHA-256 {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "Status: {3}",
+    "Reason": "Valid shared spelling in this language"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "SHA-256: {6}",
+    "Reason": "Technical identifier/product/opaque template"
+  },
+  {
+    "Culture": "pt-BR",
+    "Key": "{0} · {1} · PID {2}",
+    "Reason": "Technical identifier/product/opaque template"
+  }
+]

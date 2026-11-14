@@ -1,0 +1,161 @@
+{
+  "Found {0} transaction(s). Manifests and backups are verified before restore.": [
+    0
+  ],
+  "Ready to restore {0} file(s). No files have been changed yet.": [
+    0
+  ],
+  "Size: {0} bytes": [
+    0
+  ],
+  "New: {0}": [
+    0
+  ],
+  "Replace: {0}": [
+    0
+  ],
+  "Needs review: {0}": [
+    0
+  ],
+  "Blocked: {0}": [
+    0
+  ],
+  "Planned changes: {0}": [
+    0
+  ],
+  "Runtime detected on disk: {0} non-backup DLLs; loaded copies unknown.": [
+    0
+  ],
+  "Loaded {0} published releases": [
+    0
+  ],
+  "{0} BUILDS": [
+    0
+  ],
+  "Found {0} Steam games": [
+    0
+  ],
+  "Found {0} Steam game": [
+    0
+  ],
+  "Scanned {0} folders": [
+    0
+  ],
+  "{0} component file(s) found": [
+    0
+  ],
+  "{0} game files": [
+    0
+  ],
+  "{0} game file": [
+    0
+  ],
+  "{0} backup copies hidden": [
+    0
+  ],
+  "{0} backup copy hidden": [
+    0
+  ],
+  "{0} backup copies shown": [
+    0
+  ],
+  "{0} backup copy shown": [
+    0
+  ],
+  "{0} files visible": [
+    0
+  ],
+  "{0} file visible": [
+    0
+  ],
+  "{0} files installed and hashes verified. Transaction {1}: {2}.": [
+    0
+  ],
+  "Loaded {0} official SDK archive(s). Select one to download.": [
+    0
+  ],
+  "Download / verify {0}: {1} / {2} bytes": [
+    1,
+    2
+  ],
+  "Download was incomplete ({0} of {1} bytes). Retry the download.": [
+    0,
+    1
+  ],
+  "Planned changes: {0} · unchanged / not selected: {1}. Only planned changes are written.": [
+    0,
+    1
+  ],
+  "{0}: {1} malformed/oversized record(s); current activity is not verified from an incomplete log.": [
+    1
+  ],
+  "{0} access/version warning(s)": [
+    0
+  ],
+  "{0} possible duplicate/conflict group(s)": [
+    0
+  ],
+  "Manual / Advanced: {0} new / {1} replacement file(s). Compatibility is unverified. Review all files and confirm before writing.": [
+    0,
+    1
+  ],
+  "Downloading {0} · {1} / {2} bytes": [
+    1,
+    2
+  ],
+  "The scan stopped at the {0}-folder safety limit.": [
+    0
+  ],
+  "Installation blocked: {0} selected component(s) failed validation.": [
+    0
+  ],
+  "Installation blocked: {0} selected component(s) need a verified per-game review.": [
+    0
+  ],
+  "Ready to install {0} new file(s) and replace {1} existing file(s). Confirm before writing.": [
+    0,
+    1
+  ],
+  "Local archive size does not match the selected GitHub asset ({0} of {1} bytes).": [
+    0,
+    1
+  ],
+  "Transaction {0} completed. {1} file(s) installed. Runtime loaded: NOT VERIFIED. Dynamic MFG active: NOT VERIFIED. Fully restart, verify loaded paths/versions and Dynamic acceptance in MFG Unlock/ReShade.log. Use Restore to undo.": [
+    1
+  ],
+  "Staged {0} permitted runtime/license file(s) in {1}. {2} unrelated SDK file(s) were not extracted. Archive digest and staged runtime inventory verified for this session. Nothing was copied to the game.": [
+    0,
+    2
+  ],
+  "Backup candidates: {0}": [
+    0
+  ],
+  "{0} bytes": [
+    0
+  ],
+  "Steam scan complete: {0} installed games found.": [
+    0
+  ],
+  "Loaded {0} published release assets from GitHub.": [
+    0
+  ],
+  "Add: {0}": [
+    0
+  ],
+  "Skipped: {0}": [
+    0
+  ],
+  "Unchanged: {0}": [
+    0
+  ],
+  "{0} · {1} · {2} bytes": [
+    2
+  ],
+  "Review: {0}": [
+    0
+  ],
+  "Downloading Intel SDK · {0} / {1} bytes": [
+    0,
+    1
+  ]
+}

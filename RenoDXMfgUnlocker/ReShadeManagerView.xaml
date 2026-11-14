@@ -1,0 +1,47 @@
+<UserControl x:Class="RenoDXMfgUnlocker.ReShadeManagerView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Foreground="{StaticResource Text}">
+ <Grid Margin="30,22,30,20"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <StackPanel Margin="0,0,0,14"><TextBlock Text="ReShade — Full Add-on Support" FontSize="25" FontWeight="SemiBold"/><TextBlock Text="Prepare the reviewed official installer, follow its normal setup, then verify files. No unattended installation is promised." TextWrapping="Wrap" Foreground="{StaticResource Muted}" Margin="0,6,0,0"/></StackPanel>
+  <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><ScrollViewer.Resources><Style TargetType="ScrollBar" BasedOn="{StaticResource PremiumScrollBar}"/></ScrollViewer.Resources><StackPanel>
+   <Border Background="{StaticResource Panel}" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="14" Padding="16" Margin="0,0,0,12"><StackPanel>
+    <TextBlock Text="1. Installer package" Foreground="{StaticResource Purple}" FontSize="15" FontWeight="SemiBold"/>
+    <TextBlock Text="Package preparation is independent of game selection. Checked launch below still requires the selected EXE/API and a fresh scan." TextWrapping="Wrap" FontSize="12" Foreground="{StaticResource Muted}" Margin="0,6,0,4"/>
+    <TextBlock x:Name="PackageText" TextWrapping="Wrap" Margin="0,8,0,4"/><TextBlock x:Name="PackageStatusText" Text="Installer not prepared." TextWrapping="Wrap" Foreground="#C9B9FF"/>
+    <TextBlock Text="Only the reviewed Full Add-on Support package is accepted. Standard ReShade and newly released versions are not substituted." TextWrapping="Wrap" FontSize="11" Foreground="{StaticResource Muted}" Margin="0,6,0,4"/>
+    <WrapPanel><Button x:Name="PrepareButton" Content="Download / verify installer" Padding="12,8" Margin="0,6,8,0"/><Button x:Name="ImportButton" Content="Use existing official installer" Padding="12,8" Margin="0,6,8,0"/><Button x:Name="CancelPrepareButton" Content="Cancel download" Padding="12,8" Margin="0,6,0,0"/></WrapPanel>
+    <ProgressBar x:Name="DownloadProgress" Height="5" Foreground="{StaticResource Purple}" Margin="0,10,0,4" Minimum="0" Maximum="100" Visibility="Collapsed"/>
+    <WrapPanel><Button x:Name="OfficialButton" Content="Official ReShade website" Padding="10,6" Margin="0,8,8,0"/><Button x:Name="CacheButton" Content="Open installer cache" Padding="10,6" Margin="0,8,8,0"/><Button x:Name="PackageDetailsButton" Content="Package verification details" Padding="10,6" Margin="0,8,0,0"/></WrapPanel>
+   </StackPanel></Border>
+   <Border Background="{StaticResource Panel}" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="14" Padding="16" Margin="0,0,0,12"><StackPanel>
+    <TextBlock Text="2. Selected game" Foreground="{StaticResource Purple}" FontSize="15" FontWeight="SemiBold"/>
+    <TextBlock Text="EXE/API here are preflight inputs. Official Setup requires manual selection again because no supported preconfiguration contract was confirmed." TextWrapping="Wrap" FontSize="12" Foreground="{StaticResource Muted}" Margin="0,6,0,4"/>
+    <TextBlock x:Name="GameText" TextWrapping="Wrap" Margin="0,8,0,4"/><TextBlock x:Name="ExeText" TextWrapping="Wrap" FontSize="12"/>
+    <WrapPanel Margin="0,10,0,0"><Grid Width="230" Height="38" Margin="0,0,10,6"><ComboBox x:Name="ApiPicker"/><TextBlock x:Name="ApiPlaceholder" Text="Select graphics API" IsHitTestVisible="False" Foreground="{StaticResource Muted}" VerticalAlignment="Center" Margin="12,0,32,0" TextTrimming="CharacterEllipsis"/></Grid><Button x:Name="ScanButton" Content="Detect / rescan ReShade" Padding="12,8" Margin="0,0,10,6"/><Button x:Name="HomeButton" Content="Select game on Home" Padding="12,8" Margin="0,0,0,6"/></WrapPanel>
+   </StackPanel></Border>
+   <Border Background="{StaticResource Panel}" BorderBrush="{StaticResource Line}" BorderThickness="1" CornerRadius="14" Padding="16" Margin="0,0,0,12"><StackPanel>
+    <TextBlock Text="3. Installation status" Foreground="{StaticResource Purple}" FontSize="15" FontWeight="SemiBold"/>
+    <TextBlock x:Name="DetectionText" Text="Not scanned yet. Select the EXE and graphics API, then choose Detect / rescan ReShade." TextWrapping="Wrap" Margin="0,8,0,4" FontWeight="SemiBold"/><TextBlock x:Name="CompactSummaryText" TextWrapping="Wrap" Margin="0,5,0,4"/><TextBlock x:Name="UpdateActionText" TextWrapping="Wrap" FontSize="12" Foreground="{StaticResource Muted}" Margin="0,0,0,8"/><Expander x:Name="TechnicalExpander" Header="Technical Details" IsExpanded="False"><StackPanel><TextBlock x:Name="AddonText" TextWrapping="Wrap" Margin="0,8,0,4"/>
+    <TextBlock x:Name="VersionText" Visibility="Collapsed"/>
+    <TextBlock x:Name="EvidenceCaution" Text="Proxy DLL names and version strings do not prove Full Add-on Support or runtime loading." TextWrapping="Wrap" Foreground="{StaticResource Muted}" FontSize="11" Margin="0,6,0,4"/>
+    <StackPanel x:Name="FileRows"/><Button x:Name="DetectionDetailsButton" Content="Detection details" HorizontalAlignment="Left" Margin="0,8,0,0"/></StackPanel></Expander>
+   </StackPanel></Border>
+   <Border Background="#211B2D" BorderBrush="#4B3A61" BorderThickness="1" CornerRadius="14" Padding="16"><StackPanel>
+    <TextBlock Text="4. Official setup and recovery" Foreground="{StaticResource Purple}" FontSize="15" FontWeight="SemiBold"/>
+    <TextBlock Text="Command-line preselection is not enabled for reviewed ReShade 6.8.0. Standard guided setup preserves its normal decisions." TextWrapping="Wrap" Foreground="{StaticResource Muted}" FontSize="12" Margin="0,8,0,4"/><TextBlock Text="Select this exact EXE and API manually in the official installer. Its original warnings remain visible." TextWrapping="Wrap" FontSize="13" LineHeight="19" Margin="0,10,0,12"/>
+    <TextBlock x:Name="GeneralUsageWarning" Text="Online-play permission is not assessed by this scan." TextWrapping="Wrap" FontSize="11" Foreground="{StaticResource Muted}" Margin="0,0,0,8"/>
+    <Border x:Name="AntiCheatPanel" Background="#2C2235" BorderBrush="#775572" BorderThickness="1" CornerRadius="8" Padding="10" Margin="0,0,0,12"><StackPanel><TextBlock Text="Multiplayer / anti-cheat warning" Foreground="#ECC9E1" FontSize="13" FontWeight="SemiBold" Margin="0,0,0,6"/><TextBlock x:Name="AntiCheatWarning" TextWrapping="Wrap" FontSize="13" LineHeight="19"/><TextBlock x:Name="UsageWarning" TextWrapping="Wrap" FontSize="13" LineHeight="19" Margin="0,6,0,0"/></StackPanel></Border>
+    <TextBlock Text="External installer and Restore" Foreground="#D4C5E8" FontSize="13" FontWeight="SemiBold" Margin="0,0,0,4"/>
+    <TextBlock Text="The external installer controls its own changes. Our Transactions / Restore cannot roll back changes it did not record. Use official setup for repair/removal; never blindly delete proxy DLLs or user presets." TextWrapping="Wrap" FontSize="13" LineHeight="19" Margin="0,0,0,12"/>
+    <TextBlock x:Name="VulkanWarning" Text="Vulkan setup can change shared system layers and request elevation. It is separate from experimental Vulkan XeMFG; neither proves game compatibility." TextWrapping="Wrap" Foreground="#D8B9E9" Margin="0,0,0,8"/>
+    <CheckBox x:Name="Consent" Content="I reviewed the selected EXE/API and the official installer warnings." Margin="0,4,0,8"/>
+    <CheckBox x:Name="VulkanConsent" Content="I understand Vulkan setup may affect shared layers and requires manual verification." Margin="0,0,0,8"/>
+    <Border x:Name="ProxyRiskPanel" Visibility="Collapsed" Background="#2C2235" BorderBrush="#775572" BorderThickness="1" CornerRadius="8" Padding="10" Margin="0,0,0,12"><StackPanel>
+      <TextBlock x:Name="ProxyRiskText" TextWrapping="Wrap" Margin="0,0,0,8"/>
+      <CheckBox x:Name="ProxyRiskConsent" Content="I understand the proxy risks and want to open the official installer for manual review."/>
+    </StackPanel></Border>
+    <WrapPanel><Button x:Name="RunButton" Content="Run official guided installer" Padding="16,10" Background="#704BD0" BorderBrush="#8E6FF0" Margin="0,2,10,2"/></WrapPanel>
+    <TextBlock x:Name="LaunchHint" TextWrapping="Wrap" FontSize="13" LineHeight="19" Margin="0,10,0,0"/>
+   </StackPanel></Border>
+  </StackPanel></ScrollViewer>
+  <StackPanel Grid.Row="2"><Button x:Name="FinishButton" Content="Installer windows closed — rescan" Visibility="Collapsed" HorizontalAlignment="Left" Padding="14,10" Margin="0,8,0,0"/><TextBlock x:Name="StatusText" Text="ReShade inspection is read-only. No game is launched." Foreground="#C9B9FF" TextWrapping="Wrap" Margin="0,12,0,0"/></StackPanel>
+ </Grid>
+</UserControl>

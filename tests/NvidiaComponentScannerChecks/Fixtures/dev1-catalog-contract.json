@@ -1,0 +1,421 @@
+{
+  "Schema": 1,
+  "Purpose": "renodx-mfg-settings-catalog",
+  "KeyId": "builtin",
+  "Revision": 1,
+  "Entries": [
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGFlipMeteringLeadUs",
+      "Type": "Integer",
+      "Default": "2500",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "How early frames are handed to the driver's flip metering.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L33",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 8000
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGFlipQueueBufferPct",
+      "Type": "Integer",
+      "Default": "50",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "How much of the frame interval the flip queue buffers.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L35",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 100,
+      "Requires": [
+        {
+          "Key": "XeFGFlipQueue",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGFlipQueueFirst",
+      "Type": "Enum",
+      "Default": "ready",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "What the flip queue presents first.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L36",
+      "RequiresRestart": true,
+      "Values": [
+        "ready",
+        "buffer"
+      ],
+      "Requires": [
+        {
+          "Key": "XeFGFlipQueue",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGNativeBuffers",
+      "Type": "Integer",
+      "Default": "10",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Back buffers used by the flip queue.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L37",
+      "RequiresRestart": true,
+      "Minimum": 2,
+      "Maximum": 16,
+      "Requires": [
+        {
+          "Key": "XeFGFlipQueue",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "XeFGNativeLatency",
+      "Type": "Integer",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Latency requested from the SDK. 0 leaves it to the SDK.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L38",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 16
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "InvertedDepth",
+      "Type": "Enum",
+      "Default": "-1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Automatic uses the game's profile or what was learned for this executable. Wrong values cause heavy artifacts.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L39",
+      "RequiresRestart": true,
+      "Values": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "JitteredMotion",
+      "Type": "Enum",
+      "Default": "-1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Automatic uses the game's profile or what was learned for this executable. Wrong values cause shimmering.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L40",
+      "RequiresRestart": true,
+      "Values": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Compatibility",
+      "Key": "RetainNativeOutput",
+      "Type": "Enum",
+      "Default": "-1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Keeps the game's own swap chain alive, for overlays that hold references to it. Automatic follows the game's profile.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L41",
+      "RequiresRestart": true,
+      "Values": [
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Adapters",
+      "Key": "FidelityFX",
+      "Type": "Boolean",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Other",
+      "Description": "Feeds XeMFG from the game's FSR frame generation.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L42",
+      "RequiresRestart": true
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanGenerate",
+      "Type": "Boolean",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Off keeps the host running without generating, for comparison.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L46",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanInputCopy",
+      "Type": "Enum",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "How the game's inputs reach the host. The test modes are for diagnosis.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L47",
+      "RequiresRestart": true,
+      "Values": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanGameLatency",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Drives XeLL from the game's latency markers. Not measured in a game yet.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L49",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicMFG",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Chooses the multiplier from a target frame rate. Not measured in a game yet.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L50",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicTargetFps",
+      "Type": "Integer",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Target output frame rate. 0 uses no target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L51",
+      "RequiresRestart": true,
+      "Minimum": 0,
+      "Maximum": 1000,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicRounding",
+      "Type": "Enum",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "How the multiplier is rounded to reach the target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L52",
+      "RequiresRestart": true,
+      "Values": [
+        "0",
+        "1",
+        "2"
+      ],
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicAllow1x",
+      "Type": "Boolean",
+      "Default": "1",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Lets Dynamic MFG pause generation when the game already reaches the target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L53",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "XeFG",
+      "Key": "VulkanDynamicTargetAsCap",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Also limits the output to the target.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L54",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "StallTrace",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Logs long waits. Adds overhead.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L57",
+      "RequiresRestart": true
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "GpuTiming",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Logs GPU timing. Adds overhead.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L58",
+      "RequiresRestart": true
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "SummaryIntervalMs",
+      "Type": "Integer",
+      "Default": "10000",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "How often the log receives a summary.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L59",
+      "RequiresRestart": true,
+      "Minimum": 100,
+      "Maximum": 600000
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "ForceDRED",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Records DirectX crash data. Adds overhead.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L60",
+      "RequiresRestart": true
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "D3D12DebugLayer",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Requires the Graphics Tools Windows feature. Slows the game heavily.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L61",
+      "RequiresRestart": true
+    },
+    {
+      "File": "MFGAdaUnlock.ini",
+      "Section": "Diagnostics",
+      "Key": "VulkanFaults",
+      "Type": "Boolean",
+      "Default": "0",
+      "MinimumAddon": "1.8.0",
+      "MaximumAddonExclusive": null,
+      "Category": "Advanced",
+      "Description": "Watches the Vulkan host for crashes and hangs.",
+      "Evidence": "https://github.com/mavismmg/MFGAdaUnlock-RenoDx/blob/3b8889f98cd0cf50e4f7d5daca730fc6084ff57d/src/addons/mfgunlock/advanced_settings.hpp#L62",
+      "RequiresRestart": true,
+      "Requires": [
+        {
+          "Key": "Vulkan",
+          "Value": "1"
+        }
+      ]
+    }
+  ]
+}
